@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "portfolioo",
+  "compatibility_date": "2025-09-24",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "dist/server/server.js",
+  "assets": { "directory": "dist/client" },
+  "workers_dev": false,
+  "routes": [
+    { "pattern": "g0.monster/*", "zone_name": "g0.monster" },
+    { "pattern": "www.g0.monster/*", "zone_name": "g0.monster" }
+  ],
+  "observability": { "enabled": true }
+}

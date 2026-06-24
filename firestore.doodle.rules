@@ -1,0 +1,12 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Doodles — anyone can read and add drawings to the wall
+    match /doodles/{doodleId} {
+      allow read: if true;
+      allow create: if true;
+      allow update: if false;
+      allow delete: if true;
+    }
+  }
+}

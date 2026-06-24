@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+Sitemap: https://g0.monster/sitemap.xml
